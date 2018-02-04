@@ -100,7 +100,8 @@ set ignorecase                  " ignore case on searches
 " -----------------------------------------------------------------------------
 " Backups and swap
 " -----------------------------------------------------------------------------
-set backupdir=~/tmp/sessions    " backups
+silent !mkdir -p ~/.vim/sessions > /dev/null 2>&1
+set backupdir=~/.vim/sessions    " backups
 
 set backupcopy=yes
 set backupskip=/tmp/*,$TMPDIR/*,$TMP/*,$TEMP/*
