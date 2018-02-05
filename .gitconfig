@@ -1,0 +1,62 @@
+[user]
+  name  = Curt Micol
+  email = asenchi+github@asenchi.com
+
+[alias]
+  co     = checkout
+  ci     = commit
+  st     = status -s -b
+  d      = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+  amend  = commit --amend
+  pom    = push origin master
+  l      = log --pretty=format:'%Cred%h%Creset %s %C(yellow)%an%Creset' --abbrev-commit --max-count=15
+  ll     = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative -30
+  rank   = shortlog -sn --no-merges
+  log    = log --stat
+
+  # Remove branches that have already been merged with master
+  # a.k.a. ‘delete merged’
+  delmerged = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d; git remote -v update -p"
+
+[color]
+  diff   = auto
+  status = auto
+  branch = auto
+  pager  = yes
+
+[core]
+  editor       = vim
+  whitespace   = space-before-tab, trailing-space
+
+[diff]
+  rename = copy
+
+[branch]
+  autosetupmerge = always
+
+[push]
+  default = current
+
+[hub]
+  protocol   = https
+  http-clone = true
+
+[color "status"]
+  added     = yellow
+  changed   = green
+  untracked = blue bold
+
+[color "diff"]
+  meta = blue bold
+  frag = magenta bold
+  old  = red bold
+  new  = green
+
+[color "branch"]
+  current = yellow reverse
+  local   = yellow bold
+  remote  = green
+  plain   = red bold
+
+[github]
+  user = asenchi
