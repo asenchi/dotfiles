@@ -60,3 +60,5 @@
 
 [github]
   user = asenchi
+[credential]
+	helper = cache
