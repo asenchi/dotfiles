@@ -1,0 +1,19 @@
+# tab complete
+set completion-ignore-case on
+
+# Add slash to symlinks
+set mark-symlinked-directories on
+
+# no auto complete on hidden files unless we use a dot
+set match-hidden-files off
+
+# Show all autocomplete results at once
+set page-completions off
+
+# If there are more than 200 possible completions for a word, ask to show them all
+set completion-query-items 200
+
+# UTF-8 input and output
+set input-meta on
+set output-meta on
+set convert-meta off
