@@ -1,3 +1,1 @@
 # dotfiles
-
-Some personal things
