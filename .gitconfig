@@ -61,4 +61,6 @@
 [github]
   user = asenchi
 [credential]
-	helper = cache
+  helper = cache
+[format]
+    signOff = true

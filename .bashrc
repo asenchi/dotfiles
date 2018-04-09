@@ -21,4 +21,7 @@ alias map="xargs -n1 -I%"
 alias ll="ls -lha"
 alias ..="cd .."
 
+# Default gists to private
+alias gist='gist -p'
+
 PS1='\h:\W \u\$ '
